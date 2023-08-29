@@ -1,0 +1,135 @@
+import { Penilaian } from "../types";
+import { atom } from "recoil";
+
+export const penialainState = atom<Penilaian[]>({
+  key: "hasilPenilaian",
+  default: [
+    {
+      id: 1,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 2,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 3,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 4,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 5,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 6,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 7,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 8,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 9,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+    {
+      id: 10,
+      aspek1: 0,
+      aspek2: 0,
+      aspek3: 0,
+      aspek4: 0,
+    },
+
+    // {
+    //     // aspek:"Aspek Penilaian 1",
+    //     mahasiswa1:0,
+    //     mahasiswa2:0,
+    //     mahasiswa3:0,
+    //     mahasiswa4:0,
+    //     mahasiswa5:0,
+    //     mahasiswa6:0,
+    //     mahasiswa7:0,
+    //     mahasiswa8:0,
+    //     mahasiswa9:0,
+    //     mahasiswa10:0,
+
+    // },
+    // {
+    //     // aspek:"Aspek Penilaian 2",
+    //     mahasiswa1:0,
+    //     mahasiswa2:0,
+    //     mahasiswa3:0,
+    //     mahasiswa4:0,
+    //     mahasiswa5:0,
+    //     mahasiswa6:0,
+    //     mahasiswa7:0,
+    //     mahasiswa8:0,
+    //     mahasiswa9:0,
+    //     mahasiswa10:0,
+
+    // },
+    // {
+    //     // aspek:"Aspek Penilaian 3",
+    //     mahasiswa1:0,
+    //     mahasiswa2:0,
+    //     mahasiswa3:0,
+    //     mahasiswa4:0,
+    //     mahasiswa5:0,
+    //     mahasiswa6:0,
+    //     mahasiswa7:0,
+    //     mahasiswa8:0,
+    //     mahasiswa9:0,
+    //     mahasiswa10:0,
+
+    // },
+    // {
+    //     // aspek:"Aspek Penilaian 4",
+    //     mahasiswa1:0,
+    //     mahasiswa2:0,
+    //     mahasiswa3:0,
+    //     mahasiswa4:0,
+    //     mahasiswa5:0,
+    //     mahasiswa6:0,
+    //     mahasiswa7:0,
+    //     mahasiswa8:0,
+    //     mahasiswa9:0,
+    //     mahasiswa10:0,
+
+    // }
+  ],
+});
