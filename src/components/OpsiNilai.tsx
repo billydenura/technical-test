@@ -16,8 +16,6 @@ const OpsiNilai = ({ nilaiId, aspekKe }: opsiNilaiProps) => {
       onChange={(event) => {
         setValue(event.target.value);
         gantiNilai(nilaiId, aspekKe, parseInt(event.target.value));
-        // console.log(event.target.value);
-        // console.log(nilaiId);
       }}
       defaultValue={value}
       style={stlye.column}

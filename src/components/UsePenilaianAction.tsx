@@ -4,9 +4,6 @@ import { Penilaian } from "../types";
 
 export interface usePenilaianActionType {
   gantiNilai: (nilaiId: number, aspekKe: number, aspekNilai: number) => void;
-  // gantiNilai2: (nilaiId: number, aspekNilai: number) => void;
-  // gantiNilai3: (nilaiId: number, aspekNilai: number) => void;
-  // gantiNilai4: (nilaiId: number, aspekNilai: number) => void;
 }
 
 export const usePenilaianAction = (): usePenilaianActionType => {
@@ -28,31 +25,11 @@ export const usePenilaianAction = (): usePenilaianActionType => {
         : nilai
     );
     setHasilPenilian(nilaiSementara);
-    console.log(aspekKe);
+    console.log(nilaiSementara);
+    console.log(hasilPenilaian);
   };
-  // const gantiNilai2 = (nilaiId: number, aspekNilai: number): void => {
-  //   const nilaiSementara: Penilaian[] = hasilPenilaian.map((nilai) =>
-  //     nilai.id == nilaiId ? { ...nilai, aspek2: aspekNilai } : nilai
-  //   );
-  //   setHasilPenilian(nilaiSementara);
-  // };
-  // const gantiNilai3 = (nilaiId: number, aspekNilai: number): void => {
-  //   const nilaiSementara: Penilaian[] = hasilPenilaian.map((nilai) =>
-  //     nilai.id == nilaiId ? { ...nilai, aspek3: aspekNilai } : nilai
-  //   );
-  //   setHasilPenilian(nilaiSementara);
-  // };
-  // const gantiNilai4 = (nilaiId: number, aspekNilai: number): void => {
-  //   const nilaiSementara: Penilaian[] = hasilPenilaian.map((nilai) =>
-  //     nilai.id == nilaiId ? { ...nilai, aspek3: aspekNilai } : nilai
-  //   );
-  //   setHasilPenilian(nilaiSementara);
-  // };
 
   return {
     gantiNilai,
-    // gantiNilai2,
-    // gantiNilai3,
-    // gantiNilai4,
   };
 };

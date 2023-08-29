@@ -2,13 +2,10 @@ import { Penilaian } from "../types";
 import OpsiNilai from "./OpsiNilai";
 import { penialainState } from "./PenilaianAtom";
 import { useRecoilValue } from "recoil";
-// import { usePenilaianAction } from "./UsePenilaianAction";
 import { CSSProperties } from "../types";
 
 const BarisAspek = () => {
   const hasilPenilaian = useRecoilValue(penialainState);
-  // const { gantiNilai1, gantiNilai2, gantiNilai3, gantiNilai4 } =
-  //   usePenilaianAction();
   return (
     <div>
       {hasilPenilaian.map((nilai: Penilaian) => {
